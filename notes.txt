@@ -1,0 +1,6 @@
+open git bash
+1. git init
+2. git remote add origin "repo link"
+3. git pull origin master
+4. git status  (untracked file which are not added explicitly to the  index)
+5.
