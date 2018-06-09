@@ -16,8 +16,28 @@ You can set your e-mail address too:
 git config --global user.email "name@domain.example"
 
 
+
 7. if  want to add multiple file in commit so use the below command
 
    git add -A
    
-   git commit -a -m "adding  multiple files together"
+8   git commit -a -m "adding  multiple files together"
+
+9. git  log  (to check logs history)
+
+10 Create a new branch
+  -> git branch firstbranch (its contain all the files as its cut  from master)
+  -> git checkout firstbranch
+ now you switched to the firstbrnach
+
+now crate a new text file and add commit on firstbranch
+
+git add firstbranch.txt
+
+->now git commit -m "changes in first branch"
+
+you cna check files  with ls command
+
+now i am going to merge first branch in master. first chekout the master branch git  checkout master
+
+-> git merge firstbranch
