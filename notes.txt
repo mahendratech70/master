@@ -41,3 +41,32 @@ you cna check files  with ls command
 now i am going to merge first branch in master. first chekout the master branch git  checkout master
 
 -> git merge firstbranch
+
+  $ git rebase master
+  Current branch firstbranch is up to date.
+
+-> Add ssh key in your github account
+   first generate ssh key
+ -->> type  ssh.keygan
+
+/c/Users/mahendra/.ssh/id_rsa.pub
+
+--> cat /c/Users/mahendra/.ssh/id_rsa.pub      and enter
+
+then you will get the public  ssh key
+
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC0s2Od0huaboO5HRpDkAXVmv7ZEk5nMljn9nQiPD2mI4Hgt+iC+CsUPDvfaXhr8WjO1/6S0W/atJ9P0Cy1EV5bZUZQUXGfbmBgcNgunkWxWvbm/8ZzhFZbxhLdMN7aJSf+ddKG7MDb3Yb5/DjkxvgkR5BZUFJybP939dXX+s97M2/U/bHHIA/VwJ+t7AslHsnlMewl1XK0u/tcg1B5Q3owheDNBcGWAZIaA4EHqNaFmeUaT5KSMo6PQGwmXMW/qgTdrJd/VC4KsW0h9BXKOvKrl7+ZZHRSYk2uRv9sORFOKLWF5Sta07iyWI6N1kAI0O5t1crtYXHnZSkUfg2RO+op mahendra@tree
+
+now to set that public ssh key > go to the account > settings>
+
+> click on ssh and gpg keys > click on green button new ssh key
+> give title ssh1
+> paste ssh key in key
+
+now in gitbash
+> ssh -T git@github.com
+
+then you will get the message that successfully autthencitacted
+
+now you can push the code
