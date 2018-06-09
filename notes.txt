@@ -3,4 +3,21 @@ open git bash
 2. git remote add origin "repo link"
 3. git pull origin master
 4. git status  (untracked file which are not added explicitly to the  index)
-5.
+5. git add name of your file
+6. git commit -m "added the notes file your message here"
+
+
+if it show error so do the following changes
+Not sure where "smcho" comes from, but the setting to set your name is user.name:
+
+git config --global user.name "Your Name"
+You can set your e-mail address too:
+
+git config --global user.email "name@domain.example"
+
+
+7. if  want to add multiple file in commit so use the below command
+
+   git add -A
+   
+   git commit -a -m "adding  multiple files together"
